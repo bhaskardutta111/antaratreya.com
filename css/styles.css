@@ -1,0 +1,202 @@
+@charset "utf-8";
+body{
+    /*background-image: url("../images/bookFrontPoster.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;*/
+    font-family: philosopher, 'sans-serif';
+    font-style: normal;    
+	
+}
+.container{
+	border: 5px solid #E391D5;
+	border-radius: 5px;
+	padding: 1px;
+}
+
+.container .navbar.navbar-expand-lg.navbar-light.bg-light {
+    font-family: philosopher, 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+}
+.container #about {
+	background-image: url("../images/fullPosterFront.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: 100%;
+	background-position: center;
+    font-family: philosopher, 'sans-serif';
+    font-style: normal;
+    font-size: 22px;
+	color: #fff;
+	padding-left: 5px;
+
+}
+#about h2{
+	text-align: center;
+	padding: 15px;
+	
+}
+
+#about p{
+	padding-left: 5px;
+}
+
+.container article {
+    font-family: philosopher;
+    font-style: normal;
+}
+
+.container #author {
+    background-image: ;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-position: center;
+/*	color: #fff;*/
+	padding-left: 5px;
+	font-size: 22px;
+	line-height: 2;
+}
+
+#author h2{
+	text-align: center;
+	padding: 15px;
+}
+#author p{
+	padding-left: 5px;
+}
+#offer {
+	font-size: 22px;
+}
+#offer h2{
+	text-align: center;
+	padding: 15px;
+}
+#offer p{
+	padding: 5px;
+}
+#media{
+	font-size: 25px;
+}
+#media h2{
+    padding: 15px;
+    text-align: center;
+}
+#media p{
+	padding-left: 5px;
+}
+
+#contact{
+	background: #282828;
+background: linear-gradient(-135deg, #EE7752, #E73C7E, #23A6D5, #23D58B);
+	background-size: 400% 400%;
+	animation: Gradient 15s ease infinite;
+	font-size: 22px;
+margin-bottom: 5px;
+}
+
+@-webkit-keyframes Gradient{
+	0%{background-position: 0% 50%}
+	50%{background-position: 100% 50%}
+	100%{background-position: 0% 50%}
+}
+#contact h2{
+	text-align: center;
+	padding: 15px;
+}
+
+#contact .col-lg-6 form{
+	padding-left: 15px;
+}
+#contact p{
+	padding-left: 20px;
+}
+
+#contact .col-lg-6 .form-group{
+	padding-left: 5px;
+}
+
+#contact .col-lg-6 #formGroupExampleInput, #exampleInputEmail1, #exampleFormControlTextarea{
+	border: 2px solid #C5A5F0;
+}
+
+#contact .btn:hover{
+	border: 2px solid black;
+	border-radius: 7px;
+	background-color: #C5A5F0;
+	color: #000;
+}
+
+#contact .btn{
+	position: relative;
+	left: 7px;
+	width: 90px;
+	
+}
+#contact ul{
+	list-style: none;
+	position: relative;
+	top: 50px;
+	font-size: 20px;
+}
+#contact li{
+	display: inline-block;
+	margin: 10px 30px;
+	padding: 20px 20px;
+	color: #000;
+	border: 1px solid #000;
+	border-radius: 70%;
+	transform: 0.5s;
+	
+}
+#contact li:hover{
+	color: #C5A5F0;
+	border: 1px solid #C5A5F0;
+	transform: 0.5s;
+}
+#contact a{
+	text-decoration: none;
+	/*border: 1px solid black;*/
+}
+
+#submitButton{
+	width: 80%;
+	background-color: #2C3A47;
+	border-radius: 10px;
+	cursor:pointer;
+	color:white;
+	font-size:24px;
+	padding-top:10px;
+	padding-bottom:10px;
+	transition: all 0.3s;
+	margin: 10px;
+	font-weight:100;
+  
+}
+.container footer {
+    font-family: philosopher, 'sans-serif';
+    font-style: normal;
+	background-color: #C5A5F0;
+    font-weight: 400;
+	border: 1px solid #C5A5F0;
+	display: inline-block;
+	width: 100%;
+	font-size: 22px;
+	text-align: center;
+
+}
+
+.copyright{
+	margin: 10px;	
+}
+
+
+
+
+
+
+
+
+
