@@ -1,0 +1,44 @@
+/* Extra small devices-600px and down*/
+@media only screen and (max-width: 600px) {
+
+body{
+	font-family: philosopher, 'sans-serif';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 2;
+    border: 2px solid red;
+}
+
+.container{
+     display: none; 
+}
+
+.page-phone{
+    border: 10px solid #000;
+    border-radius: 5px;
+    /* position: relative; */
+    width: 100%;
+}
+
+.page-phone img{
+    max-width: 100%;
+}
+
+.visit-site{
+/* position: absolute;  */
+top: 92%;
+left: 40%;
+background: transparent;
+  color: white;
+  font-size: 20px;
+  padding: 12px 24px;
+  border: none;
+}
+
+
+.navbar, .carousel, article, footer, .icon-bar{
+    display: none;
+
+}
+
+}

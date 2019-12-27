@@ -1,202 +1,290 @@
-@charset "utf-8";
-body{
-    /*background-image: url("../images/bookFrontPoster.jpg");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	background-position: center;*/
-    font-family: philosopher, 'sans-serif';
-    font-style: normal;    
-	
-}
-.container{
-	border: 5px solid #E391D5;
-	border-radius: 5px;
-	padding: 1px;
-}
-
-.container .navbar.navbar-expand-lg.navbar-light.bg-light {
-    font-family: philosopher, 'sans-serif';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-}
-.container #about {
-	background-image: url("../images/fullPosterFront.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-	background-size: 100%;
-	background-position: center;
-    font-family: philosopher, 'sans-serif';
-    font-style: normal;
-    font-size: 22px;
-	color: #fff;
-	padding-left: 5px;
-
-}
-#about h2{
-	text-align: center;
-	padding: 15px;
-	
-}
-
-#about p{
-	padding-left: 5px;
-}
-
-.container article {
-    font-family: philosopher;
-    font-style: normal;
-}
-
-.container #author {
-    background-image: ;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: 100%;
-	background-position: center;
-/*	color: #fff;*/
-	padding-left: 5px;
-	font-size: 22px;
-	line-height: 2;
-}
-
-#author h2{
-	text-align: center;
-	padding: 15px;
-}
-#author p{
-	padding-left: 5px;
-}
-#offer {
-	font-size: 22px;
-}
-#offer h2{
-	text-align: center;
-	padding: 15px;
-}
-#offer p{
-	padding: 5px;
-}
-#media{
-	font-size: 25px;
-}
-#media h2{
-    padding: 15px;
-    text-align: center;
-}
-#media p{
-	padding-left: 5px;
-}
-
-#contact{
-	background: #282828;
-background: linear-gradient(-135deg, #EE7752, #E73C7E, #23A6D5, #23D58B);
-	background-size: 400% 400%;
-	animation: Gradient 15s ease infinite;
-	font-size: 22px;
-margin-bottom: 5px;
-}
-
-@-webkit-keyframes Gradient{
-	0%{background-position: 0% 50%}
-	50%{background-position: 100% 50%}
-	100%{background-position: 0% 50%}
-}
-#contact h2{
-	text-align: center;
-	padding: 15px;
-}
-
-#contact .col-lg-6 form{
-	padding-left: 15px;
-}
-#contact p{
-	padding-left: 20px;
-}
-
-#contact .col-lg-6 .form-group{
-	padding-left: 5px;
-}
-
-#contact .col-lg-6 #formGroupExampleInput, #exampleInputEmail1, #exampleFormControlTextarea{
-	border: 2px solid #C5A5F0;
-}
-
-#contact .btn:hover{
-	border: 2px solid black;
-	border-radius: 7px;
-	background-color: #C5A5F0;
-	color: #000;
-}
-
-#contact .btn{
-	position: relative;
-	left: 7px;
-	width: 90px;
-	
-}
-#contact ul{
-	list-style: none;
-	position: relative;
-	top: 50px;
-	font-size: 20px;
-}
-#contact li{
-	display: inline-block;
-	margin: 10px 30px;
-	padding: 20px 20px;
-	color: #000;
-	border: 1px solid #000;
-	border-radius: 70%;
-	transform: 0.5s;
-	
-}
-#contact li:hover{
-	color: #C5A5F0;
-	border: 1px solid #C5A5F0;
-	transform: 0.5s;
-}
-#contact a{
-	text-decoration: none;
-	/*border: 1px solid black;*/
-}
-
-#submitButton{
-	width: 80%;
-	background-color: #2C3A47;
-	border-radius: 10px;
-	cursor:pointer;
-	color:white;
-	font-size:24px;
-	padding-top:10px;
-	padding-bottom:10px;
-	transition: all 0.3s;
-	margin: 10px;
-	font-weight:100;
+  /* Extra large devices-1200px and up*/
+  @media only screen and (min-width: 1200px) {
   
-}
-.container footer {
-    font-family: philosopher, 'sans-serif';
-    font-style: normal;
-	background-color: #C5A5F0;
-    font-weight: 400;
-	border: 1px solid #C5A5F0;
-	display: inline-block;
-	width: 100%;
-	font-size: 22px;
-	text-align: center;
+	#container{
+		scroll-behavior: smooth;
+	}
+	
+	body{
+		background: linear-gradient(216deg, #4fab94, #3676af, #a06fa0, #7b6e7a);
+		background-size: 800% 800%;
+		-webkit-animation: Grad 6s ease infinite;
+		-moz-animation: Grad 6s ease infinite;
+		animation: Grad 6s ease infinite;	font-family: philosopher, 'sans-serif';
+		color: #fff;
+	}
+	@-webkit-keyframes Grad {
+		0%{background-position:0% 49%}
+		50%{background-position:100% 52%}
+		100%{background-position:0% 49%}
+	}
+	@-moz-keyframes Grad {
+		0%{background-position:0% 49%}
+		50%{background-position:100% 52%}
+		100%{background-position:0% 49%}
+	}
+	@keyframes Grad {
+		0%{background-position:0% 49%}
+		50%{background-position:100% 52%}
+		100%{background-position:0% 49%}
+	}
+	.container{
+		border: 5px solid #E391D5;
+		border-radius: 5px;
+		padding: 1px;
+	}
+
+	.page-phone{
+		display: none;
+	}
+	
+	.navbar {
+		font-family: philosopher, 'sans-serif';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 22px;
+		background: linear-gradient(331deg, #48f1e6, #da30b3, #6f5cef);
+	}
+	.nav-link:hover{
+		border: 2px solid #E391D5;
+		border-radius: 5px;
+		color: #fff;
+		background: #E391D5;
+	}
+	.navbar-brand{
+		font-size: 25px;
+	}
+	.navbar-brand:hover{
+		border: 2px solid #E391D5;
+		border-radius: 5px;
+		color: #fff;
+		background: #E391D5;
+	}
+	
+	.carousel-inner img{
+		/* border: 1px solid red; */
+		width: 600px;
+		max-width: 100%
+	}
+	.carousel-item img{
+	
+	}
+	/********ICONBAR****/
+	.icon-bar {
+		position: fixed;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	  }
+	  /* Style the icon bar links */
+	  .icon-bar a {
+		display: block;
+		text-align: center;
+		padding: 16px;
+		transition: all 0.3s ease;
+		color: white;
+		font-size: 25px;
+		border: 5px solid #000;
+		border-radius: 5px;
+		margin-bottom: 5px;
+	  }
+	  /* Style the social media icons with color, if you want */
+	  .icon-bar a:hover {
+		background-color: #000;
+		opacity: 0.8;
+	  }
+	  
+	  .facebook {
+		background: #3B5998;
+		color: white;
+	  }  
+	  .instagram {
+		background: linear-gradient(331deg, #48f1e6, #da30b3, #6f5cef);
+		color: white;
+	  }  
+	 .youtube {
+		background: #bb0000;
+		color: white;
+	  }
+	
+	
+	#about {
+		font-family: philosopher, 'sans-serif';
+		font-style: normal;
+		font-size: 22px;
+		line-height: 2;
+		padding-left: 1px;	
+	}
+	
+	.book-blurb{
+		/* border: 1px solid red; */
+		width: 70%;
+	}
+	#about h1{
+		text-align: center;
+		margin: 40px;
+	}
+	
+	.theme{
+		border: 2px solid #E391D5;
+		border-radius: 5px;
+		color: #fff;
+		background: #E391D5;
+	}
+	.container article {
+		font-family: philosopher;
+		font-style: normal;
+		margin: 10px;
+	}
+	
+	#author {
+		background-image: ;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100%;
+		background-position: center;
+		padding-left: 1px;
+		font-size: 22px;
+		line-height: 2;
+	}
+	#author h1{
+		text-align: center;
+		margin: 40px;
+	}
+	.about-author{
+		padding-left: 5px;
+		/* border: 1px solid red; */
+		width: 70%;
+	}
+	
+	
+	#offer {
+		font-size: 22px;
+	}
+	#offer h1{
+		text-align: center;
+		padding: 15px;
+		margin: 10px;
+	}
+	#offer p{
+		padding: 5px;
+	}
+	#media{
+		font-size: 25px;
+	}
+	
+	#media a{
+		text-decoration: none;
+		color: #fff;
+	}
+	#media a:hover{
+		border: 2px solid #E391D5;
+		border-radius: 5px;
+		color: #fff;
+		background: #E391D5;
+	}
+	#media h1{
+		padding: 15px;
+		text-align: center;
+		margin: 10px;
+	}
+	#articles{
+		margin: 40px;
+	}
+	
+	#articles a{
+		color: #000;
+	}
+	
+	#contact{
+		font-size: 22px;
+		margin-bottom: 5px;
+	}
+	
+	#contact h1{
+		text-align: center;
+		margin: 40px;
+	
+	}
+	
+	#contact p{
+		padding-left: 1px;
+	}
+	
+	#contact .col-lg-6 .form-group{
+		padding-left: 1px;
+	}
+	
+	form{
+		margin: 10px;
+		padding: 10px;
+	}
+	
+	#contact .col-lg-6 #formGroupExampleInput, #exampleInputEmail1, #exampleFormControlTextarea{
+		color:#fff;
+		font-size: 22px;
+		line-height: 2;
+		background-color: transparent;
+		border: 2px solid transparent;
+		border-bottom: 2px solid #fff;
+		transition: all 0.3s;
+		padding: 20px;
+		margin-bottom: 30px;
+		width: 100%;
+		font-family: philosopher, 'sans-serif';
+	}
+	
+	::placeholder {
+		color: #fff;
+	  }
+	  
+	  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+	   color: #fff;
+	  }
+	
+	#submitButton:hover{
+		border-bottom: 5px solid black;
+		border-radius: 7px;
+		background-color: #C5A5F0;
+		color: #000;
+	}
+	
+	#contact .btn{
+		position: relative;
+		
+	}
+	
+	#submitButton{
+		width: 30%;
+		background-color: #2C3A47;
+		border-bottom: 5px solid black;
+		border-radius: 10px;
+		cursor:pointer;
+		color:white;
+		font-size:24px;
+		padding:20px;
+		transition: all 0.3s;
+		margin: 1px;
+		font-weight:500;
+	  
+	}
+	.container footer {
+		font-family: philosopher, 'sans-serif';
+		font-style: normal;
+		background-color: #C5A5F0;
+		font-weight: 400;
+		border: 1px solid #C5A5F0;
+		display: inline-block;
+		width: 100%;
+		font-size: 22px;
+		text-align: center;
+	
+	}
+	
+	.copyright{
+		margin: 10px;	
+	}
+	
 
 }
-
-.copyright{
-	margin: 10px;	
-}
-
-
-
-
-
-
-
-
-
