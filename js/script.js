@@ -14,6 +14,8 @@
 
 // changeNavBg();
 
+//call function wow as soon as page loads
+new WOW().init();
 
 //function for automatic slideshow
 var slideInd = 0;
@@ -38,5 +40,24 @@ function autoSlideShow() {
 
     setTimeout(autoSlideShow, 3000); // Change image every 3 seconds
 }
+
+//change background of navbar on scroll
+var navbar = document.querySelector('.navbar');
+var options = document.querySelector('#opt');
+
+window.onscroll = function(){
+    // console.log(window.scrollY);
+    if(window.scrollY > 37){
+        navbar.classList.add("sticky");
+        options.style.color = "#000";
+    }
+    else{
+        navbar.classList.remove("sticky");
+        options.style.color = "#fff";
+
+    }
+};
+
+
 
 autoSlideShow();
