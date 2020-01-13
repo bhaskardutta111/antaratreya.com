@@ -122,7 +122,7 @@ padding: 15px;
 }
 
 /******navbar******/
-.overlay {
+.navbar {
   height: 100%;
   width: 0;
   position: fixed;
@@ -175,14 +175,11 @@ padding: 15px;
 
 .slides img{
   max-width: 100%;
-  border: 1px solid red;
 }
 .caption {
   padding-left: 5px;
   font-size: 25px;
   line-height: 2;
-  border: 1px solid red;
-
 }
 
 /***************about***************/
@@ -194,14 +191,12 @@ padding: 15px;
 	font-size: 40px;
 	font-weight: 700;
 	line-height: 2;
-	margin-bottom: 5px;
   padding: 10px;
 }
 .about-details{
   font-size: 23px;
   font-weight: 500;
 	line-height: 2;
-	margin-top: 10px;
 	text-align: left;
 	padding: 10px;
 }
@@ -214,7 +209,7 @@ padding: 15px;
 .author{
   width: 100%;
 	text-align: center;
-  border-top: 1px solid #0AFADF;	
+  border-top: 3px solid #0AFADF;	
 }
 .author-label{
 	font-size: 40px;
@@ -239,7 +234,7 @@ padding: 15px;
 .offer{
 	text-align: center;
   width: 100%;
-  border-top: 1px solid #0AFADF;
+  border-top: 3px solid #0AFADF;
 }
 .offer-label h1{
 	font-size: 40px;
@@ -273,7 +268,7 @@ padding: 15px;
 .media{
 	text-align: center;
   width: 100%;
-  border-top: 1px solid #0AFADF;
+  border-top: 3px solid #0AFADF;
 }
 .media-label h1{
 	font-size: 40px;
@@ -305,6 +300,12 @@ padding: 15px;
 	text-align: left;
   padding: 5px;
 }
+.news:alink{
+  border: 5px solid #0AFADF;
+  border-radius: 5px;
+  font-weight: 600;
+
+}
 .news img{
   width: 300px;
   height: 200px;
@@ -314,75 +315,72 @@ padding: 15px;
 
 /***************contact***************/
 .contact{
-	padding: 5px;
+  width: 100%;
   margin-bottom: 20px;
-  border-top: 2px solid #0AFADF;
+  border-top: 3px solid #0AFADF;
 }
-.contact-label{
-	font-size: 30px;
-	font-weight: 500;
-	line-height: 32px;
-	margin: 15px auto;
-	width: 100%;
-	text-align: center;
-
-} 
 .contact-label h1{
-	margin: 15px;
-}
-
-.contact-label p{
-	font-size: 25px;
-	line-height: 28px;
-	margin: 15px;
-	text-align: center;
-	padding: 5px;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 2;
+  padding: 10px;
+  text-align: center;
+} 
+.contact-label h4{
+  font-size: 27px;
+  font-weight: 600;
+	line-height: 2;
+  margin-bottom: 10px;
+  padding: 15px;
 
 }
 .map-contactForm{
 	width: 100%;
 	margin: 5px;
-	margin-top: 20px;
 }
 
 .contactForm{
-	max-width: 90%;
+	width: 100%;
 	margin: 5px;
-	padding: 5px;
+  padding: 5px;
 }
 
 .fname-input, .lname-input, .msg-input {
-	border: solid #2C3A47;
+  width: 80%;
+  border: solid #2C3A47;
+  border-radius: 5px;
 	border-bottom: 2px solid #0AFADF;
 	color: #0AFADF;
 	background-color: transparent;
 	padding: 20px;
 	margin: 10px;
-	font-size: 20px;
-	line-height: 22px;
+	font-size: 22px;
+	line-height: 2;
 	transition: all 0.3s;
   font-family: philosopher, 'sans-serif';
 }
 textarea {
-	height: 150px;
-	line-height: 150%;
+	height: 200px;
+	line-height: 15%;
 	resize:vertical;
 }
-
 .submit{
-	 width: 40%;
-	background-color: #0AFADF;
+	width: 50%;
+  background-color: #0AFADF;
 	border-radius: 10px;
 	color:#2C3A47;
-  font-size:24px;
+  font-size:27px;
+  line-height: 2;
   font-family: philosopher, 'sans-serif';
-	padding-top:10px;
-  padding-bottom:10px;
-  margin-top: 30px;
-  border: 1px solid red; 
+	padding:10px;
+  margin-top: 20px;
+  font-weight:600;
+}
+.submit:alink{
+  border-bottom: 10px solid #95a5a6;
+  background-color: #2d3436;
+	color: #a29bfe;
 	transition: all 0.3s;
-	font-weight:100;
-	/*float: right;*/
 
 }
 
@@ -392,13 +390,14 @@ textarea {
   width: 100%;
   border: 1px solid red;
   margin-top: 10px;
-  font-size: 22px;
 }
 .footer a{
 	color: #e74c3c;
 	text-decoration: none;
 }
 .copyright-developer{
+  font-size: 23px;
+  line-height: 2;
 	width: 100%;
 	color: #fff;	
 	text-align: center;
@@ -417,3 +416,11 @@ textarea {
 }
 
 }
+
+
+
+
+
+
+
+
