@@ -1,18 +1,9 @@
-// function changeNavBg(){
-//     var navbar = document.querySelector('.navbar');
-//     var nav = document.querySelector('.container');
-//     var y = window.scrollY;
-// if(y >= 422){
-//     // navbar.style.backgroundColor = 'red';
-//     // nav.style.display = 'none';
-// console.log('ckjndjcdncjdnjkjdncj');
-// }
-// else{
-//     // navbar.style.backgroundColor = 'linear-gradient(331deg, #48f1e6, #da30b3, #6f5cef)';
-// }
-// }
+//function to progress loading
+var load = document.querySelector('.load');
+function loadFunc(){
+    load.style.display = 'none';
+}
 
-// changeNavBg();
 
 //call function wow as soon as page loads
 new WOW().init();
@@ -44,12 +35,15 @@ function autoSlideShow() {
 //change background of navbar on scroll
 var navbar = document.querySelector('.navbar');
 var options = document.querySelector('#opt');
+var sticky = document.querySelector('.sticky');
 
 window.onscroll = function(){
     // console.log(window.scrollY);
     if(window.scrollY > 37){
         navbar.classList.add("sticky");
         options.style.color = "#000";
+        // console.log(window.scrollY);
+
     }
     else{
         navbar.classList.remove("sticky");
