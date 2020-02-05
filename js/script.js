@@ -4,7 +4,6 @@ function loadFunc(){
     load.style.display = 'none';
 }
 
-
 //call function wow as soon as page loads
 new WOW().init();
 
@@ -90,3 +89,52 @@ function reviewSlide(n) {
     review[revIndx-1].style.display = 'block';
 }
 
+
+//scripts in responsive case
+//read more function 
+var abtReadMoreBtn = document.querySelector(".abtReadMore");
+var authReadMoreBtn = document.querySelector(".authReadMore");
+var mediaReadMoreBtn = document.querySelector(".mediaReadMore");
+var interviewReadMoreBtn = document.querySelector(".interviewReadMore");
+
+abtReadMoreBtn.addEventListener('click', function() {
+    var abtPara = document.querySelectorAll(".abtPara");
+
+    for(var abtBtn = 0; abtBtn < abtPara.length; abtBtn++){
+        abtPara[abtBtn].style.display = "block";
+        abtReadMoreBtn.style.display = "none";
+    }
+});
+
+authReadMoreBtn.addEventListener('click', function() {
+    var authPara = document.querySelectorAll(".authPara");
+
+    for(var authBtn = 0; authBtn < authPara.length; authBtn++){
+        authPara[authBtn].style.display = "block";
+        authReadMoreBtn.style.display = "none";
+    }
+});
+
+mediaReadMoreBtn.addEventListener('click', function() {
+    var mediaPara = document.querySelectorAll(".mediaPara");
+
+    for(var mediaBtn = 0; mediaBtn < mediaPara.length; mediaBtn++){
+        mediaPara[mediaBtn].style.display = "block";
+        mediaReadMoreBtn.style.display = "none";
+    }
+});
+
+interviewReadMoreBtn.addEventListener('click', function() {
+    var intervPara = document.querySelector(".intervPara");
+    interviewReadMoreBtn.style.display = "none";
+    intervPara.style.display = "block";
+});
+
+//menu for phone screen
+function openNav() {
+    document.getElementById("nav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("nav").style.width = "0%";
+}
