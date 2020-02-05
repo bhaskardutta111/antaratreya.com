@@ -9,6 +9,7 @@
 	<link href="./css/styles.css" rel="stylesheet" type="text/css">
 	<link href="./css/smDevices.css" rel="stylesheet" type="text/css"> 
 	<link href="./css/animate.css" rel="stylesheet"> 
+	<link rel="stylesheet" href="./css/swiper.min.css">
 	<link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
 </head>
 <body onload="loadFunc()">
@@ -25,7 +26,7 @@
 
 		<div class="infobar-top">
             <div class="email-social-hamicon">
-                <div class="email">
+                <div class="email tap-target">
 					<a href=mailto:connectantar@gmail.com>
 					<i class="fas fa-envelope-open"></i>connectantar@gmail.com</a>                   
                 </div>
@@ -53,7 +54,9 @@
 		</div>
 
 		<div class="navbar" id="nav">
-			<a href="javascript:void(0)" class="closebtn tap-target" onclick="closeNav()">&times;</a>
+			<button class="closebtn tap-target" onclick="closeNav()">
+				<i class="fas fa-times"></i>
+			</button>
             <div class="options">
 				<a href="#about" id="opt">About</a>
 				<a href="#author" id="opt">Author</a>
@@ -88,6 +91,38 @@
 			</div>
 		</div>
 
+		<div class="author" id="author">
+            <div class="title-details">
+                <div class="author-label">
+                    <h1>About the Author</h1>
+				</div>
+				<div class="author-details-photo">
+					<!-- <div class="author-photo">
+						<img class="author-photo-one wow fadeInLeft" src="https://scontent.fdel11-1.fna.fbcdn.net/v/t1.0-9/67609100_2369306606495409_4903294317637926912_o.jpg?_nc_cat=108&_nc_ohc=FIdCy7TnKNgAQnknz6-VVBCoHIydi83wbLJP1NRMowjKFUS5ZyTl47VNQ&_nc_ht=scontent.fdel11-1.fna&oh=1535e6e7118f781f79175c8ba67f1c1f&oe=5EA2AEC1" alt="">
+						<img class="author-photo-two wow fadeInRight" src="./images/authorPhotoTwo.jpg" alt="">
+						<img class="author-photo-three wow fadeInLeft" src="./images/authorPhotoThree.jpg" alt="">
+					</div>	 -->
+					<div class="author-details">
+						<p>Antar Atreya belongs from the beautiful Northeastern state- Amazing Assam! <br>
+							<button class="authReadMore tap-target">Know More</button>
+						</p>
+						<div class="authPara">
+							<p>A graduate in Economics from Ramjas College, University of Delhi; he decided to turn into a storyteller and author instead of following the conventional route of taking up a job.
+								He wrote his first book, "Classic Suspense Stories" at the age of 14 which sold more than 500 copies in 2009. In 2018 he co-authored with <a href="shorturl.at/CDGIP">Durjoy Datta</a>  and other emerging writers in a book "<a href="shorturl.at/mIMSY" target="_blank">Pocketful O’ Stories: Micro-tales on Unexpected Moments of Love".</a>
+								The book published by <a href="shorturl.at/dhsQ3" target="_blank">Penguin Random House India</a>, features five of his heart-warming nano-tales on love.
+								His latest book is titled, <a href="shorturl.at/wCHIV" target="_blank">Chronicles of the Mortal Vishnu.</a> It is a mytho-fantasy fiction saga set in the next Treta yuga.
+							</p>
+						</div>
+						<div class="authPara">
+							<p>He believes that, everyone can create their own world through stories and to inspire budding writers he has also launched a Youtube segment- <a href="shorturl.at/pqLS5" target="_blank">Turn into an author with Antar.</a> In this segment he shares the intricate details of 'how to write a book?' and ‘how to get your book published?'
+								A socially responsible Indian, the author will sponsor the education of rescued girl child labor(s) from the profits of his first book!
+							</p>
+						</div>
+					</div>   
+				</div>				
+            </div>
+		</div>
+
 		<div class="about" id="about">
             <div class="title-details">
                 <div class="about-label">
@@ -96,51 +131,39 @@
 				<div class="about-details-photo">
 					<div class="about-details">
 						<p>THE YEAR IS 3300 AND IT IS THE TRETA YUGA OF THE NEW AGE.
-							"Will God too turn corrupt?"</p>
-						<p>In the new world after civilization was established and political and economic structures emerged with time and necessity; mankind finally welcomed injustice. <br>
-							The earth’s first born who had mentored mankind's progress and laid the first civilization turned into the tyrannical Bhuswami, creating the Daitya clan. Bestowed with power from the Gods he became authorative, invincible and ruthless.</p>
-						<p>With their own stories, two prodigal warriors turn into Maharathis.	They had their own journeys of discovering their potential, gaining unparalleled might and realizing the power of LOVE. Supported by his 'destined one', one of the Maharathis manifested himself as A MORTAL DIVINE.
-							The two-gather liberated a river from the locks of Lord Shiva, resurrected kingdoms and slayed a pack of violent wolves. 
-							With long lasting political turmoil across the seven landmasses, the world was in the brink of the First Global War.
-							The Daityas gathered a colossal force and facing them was a coalition of Ten Kings.
-							The Ten Kings were brought together with various reasons by the two Maharathis under the insignia of Garuda. 
-							Also aiding them were the mystic tribes of Narklokis and Yakshas; for they had made promises in the past.</p>
-						<p>With the global war knocking; a sudden surprising event creates a question - </p>
-						<p>"Does God too turns corrupt?"</p>
+							"Will God too turn corrupt?" <br>
+							<button class="abtReadMore tap-target">Know More</button>
+						</p>
+						<div class="abtPara">
+							<p>In the new world after civilization was established and political and economic structures emerged with time and necessity; mankind finally welcomed injustice. <br>
+								The earth’s first born who had mentored mankind's progress and laid the first civilization turned into the tyrannical Bhuswami, creating the Daitya clan. Bestowed with power from the Gods he became authorative, invincible and ruthless.
+							</p>
+						</div>
+						<div class="abtPara">
+							<p>With their own stories, two prodigal warriors turn into Maharathis.	They had their own journeys of discovering their potential, gaining unparalleled might and realizing the power of LOVE. Supported by his 'destined one', one of the Maharathis manifested himself as A MORTAL DIVINE.
+								The two-gather liberated a river from the locks of Lord Shiva, resurrected kingdoms and slayed a pack of violent wolves. 
+								With long lasting political turmoil across the seven landmasses, the world was in the brink of the First Global War.
+								The Daityas gathered a colossal force and facing them was a coalition of Ten Kings.
+								The Ten Kings were brought together with various reasons by the two Maharathis under the insignia of Garuda. 
+								Also aiding them were the mystic tribes of Narklokis and Yakshas; for they had made promises in the past.
+							</p>
+						</div>
+						<div class="abtPara">
+							<p>With the global war knocking; a sudden surprising event creates a question - </p>
+						</div>
+						<div class="abtPara">
+							<p>"Does God too turns corrupt?"</p>
+						</div>
 					</div>      
-					<div class="about-photo">
-						<img class="wow fadeInRight" src="./images/aboutPhotoOne.jpeg" alt="Best-selling book distributed across Tier-II Indian cities" caption="Best-selling book distributed across Tier-II Indian cities">
-						<img class="wow fadeInLeft" src="./images/aboutPhotoTwo.jpeg" alt="Book on the best-seller rack display at Kochi International Fest 2019">
-						<img class="wow fadeInRight" src="./images/aboutPhotoThree.jpg" alt="Signing the new print of 3000 books !">
-					</div>	
+					<!-- <div class="about-photo">
+						<img class="about-photo-one wow fadeInRight" src="./images/aboutPhotoOne.jpeg" alt="Best-selling book distributed across Tier-II Indian cities" caption="Best-selling book distributed across Tier-II Indian cities">
+						<img class="about-photo-two wow fadeInLeft" src="./images/aboutPhotoTwo.jpeg" alt="Book on the best-seller rack display at Kochi International Fest 2019">
+						<img class="about-photo-three wow fadeInRight" src="./images/aboutPhotoThree.jpg" alt="Signing the new print of 3000 books !">
+					</div>	 -->
 				</div>
             </div>
 		</div>
 		
-		<div class="author" id="author">
-            <div class="title-details">
-                <div class="author-label">
-                    <h1>About the Author</h1>
-				</div>
-				<div class="author-details-photo">
-					<div class="author-photo">
-						<img class="wow fadeInLeft" src="https://scontent.fdel11-1.fna.fbcdn.net/v/t1.0-9/67609100_2369306606495409_4903294317637926912_o.jpg?_nc_cat=108&_nc_ohc=FIdCy7TnKNgAQnknz6-VVBCoHIydi83wbLJP1NRMowjKFUS5ZyTl47VNQ&_nc_ht=scontent.fdel11-1.fna&oh=1535e6e7118f781f79175c8ba67f1c1f&oe=5EA2AEC1" alt="">
-						<img class="wow fadeInRight" src="./images/authorPhotoTwo.jpg" alt="">
-						<img class="wow fadeInLeft" src="./images/authorPhotoThree.jpg" alt="">
-					</div>	
-					<div class="author-details">
-						<p>Antar Atreya belongs from the beautiful Northeastern state- amazing Assam!</p>
-						<p>A graduate in Economics from Ramjas College, University of Delhi; he decided to turn into a storyteller and author instead of following the conventional route of taking up a job.
-						He wrote his first book, "Classic Suspense Stories" at the age of 14 which sold more than 500 copies in 2009. In 2018 he co-authored with <a href="shorturl.at/CDGIP">Durjoy Datta</a>  and other emerging writers in a book "<a href="shorturl.at/mIMSY" target="_blank">Pocketful O’ Stories: Micro-tales on Unexpected Moments of Love".</a>
-						The book published by <a href="shorturl.at/dhsQ3" target="_blank">Penguin Random House India</a>, features five of his heart-warming nano-tales on love.
-						His latest book is titled, <a href="shorturl.at/wCHIV" target="_blank">Chronicles of the Mortal Vishnu.</a> It is a mytho-fantasy fiction saga set in the next Treta yuga.</p>
-						<p>He believes that, everyone can create their own world through stories and to inspire budding writers he has also launched a Youtube segment- <a href="shorturl.at/pqLS5" target="_blank">Turn into an author with Antar.</a> In this segment he shares the intricate details of 'how to write a book?' and ‘how to get your book published?'
-						A socially responsible Indian, the author will sponsor the education of rescued girl child labor(s) from the profits of his first book!</p>
-					</div>   
-				</div>				
-            </div>
-		</div>
-
 		<div class="charac" id="charac">
 			<div class="title-details">
 				<div class="charac-label">
@@ -148,105 +171,102 @@
 					<h4>Know about them before reading the Sample Chapters </h4>
 				</div>
 				<div class="charac-details">
-					<div class="charac-cards">
-						<div class="card-one-two">
-							<div class="card-one charac-card">
-								<div class="charac-card-face">
-									<video id="characVideo" width="300px" src="./videos/meghnaini.mp4" controls></video>
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+
+							<div class="charac-card card-one swiper-slide">
+								<div class="card-face">
+									<video id="characVideo" src="./videos/meghnaini.mp4" controls></video>
 								</div>
-								<div id="one-bio" class="charac-card-bio wow fadeInLeft">
+								<div class="card-bio">
 									<h3>Meghnaini</h3>
 									<p>Is she a Mistress or a Goddesses ??</p>
 								</div>
 							</div>	
-							<div class="card-two charac-card">
-								<div class="charac-card-face">
-									<video id="characVideo" width="300px" src="./videos/shastraraj.mp4" controls></video>
+							<div class="charac-card card-two swiper-slide">
+								<div class="card-face">
+									<video id="characVideo" src="./videos/shastraraj.mp4" controls></video>
 								</div>
-								<div id="two-bio" class="charac-card-bio wow fadeInRight">
+								<div class="card-bio">
 									<h3>Shastraraj</h3>
 									<p>A Daitya guru who turns into a Shiva devotee</p>
 								</div>						
 							</div>
-						</div>
-						<div class="card-three-four">
-							<div class="card-three charac-card">
-								<div class="charac-card-face">
-									<video id="characVideo" width="300px" src="./videos/navyanandi.mp4" controls></video>
+							<div class="charac-card card-three swiper-slide">
+								<div class="card-face">
+									<video id="characVideo" src="./videos/navyanandi.mp4" controls></video>
 								</div>
-								<div id="three-bio" class="charac-card-bio wow slideInLeft">
+								<div class="card-bio">
 									<h3>Navyanandi</h3>
 									<p>The Bold, empowered and mystic daughter of a Saptarshi</p>
 								</div>
-							</div>
-							<div class="card-four charac-card">
-								<div class="charac-card-face">
-									<video id="characVideo" width="300px" src="./videos/bhuswami.mp4" controls></video>
+							</div>	
+							<div class="charac-card card-four swiper-slide">
+								<div class="card-face">
+									<video id="characVideo" src="./videos/bhuswami.mp4" controls></video>
 								</div>
-								<div id="four-bio" class="charac-card-bio wow slideInRight">
+								<div class="card-bio">
 									<h3>Bhuswami</h3>
 									<p>The first born, mentor of mankind who turns into a tyrannical ruler.</p>
 								</div>						
 							</div>
-						</div>
-						<div class="card-five-six">					
-							<div class="card-five charac-card">
-								<div class="charac-card-face">
-									<video id="characVideo" width="300px" src="./videos/virinva.mp4" controls></video>
+							<div class="charac-card card-five swiper-slide">
+								<div class="card-face">
+									<video id="characVideo" src="./videos/virinva.mp4" controls></video>
 								</div>
-								<div id="five-bio" class="charac-card-bio wow fadeInLeft">
+								<div class="card-bio">
 									<h3>Virinva</h3>				
 									<p>The Chief of the mystic Narkloki Tribes</p>
 								</div>
 							</div>
-							<div class="card-six charac-card">
-								<div class="charac-card-face">
-									<video id="characVideo" width="300px" src="./videos/tejas.mp4" controls></video>
+							<div class="charac-card card-six swiper-slide">
+								<div class="card-face">
+									<video id="characVideo" src="./videos/tejas.mp4" controls></video>
 								</div>
-								<div id="six-bio" class="charac-card-bio wow fadeInRight">
+								<div class="card-bio">
 									<h3>Tejas</h3>											
 									<p>A low-born who becomes a Divine Mortal with his actions</p>
-								</div>						
-							</div>
-						</div>
-						<div class="card-sev-eigt">
-							<div class="card-sev charac-card">
-								<div class="charac-card-face">
-									<video id="characVideo" width="300px" src="./videos/yakshasChief.mp4" controls></video>
 								</div>
-								<div id="sev-bio" class="charac-card-bio wow slideInLeft">
+							</div>						
+							<div class="charac-card card-sev swiper-slide">
+								<div class="card-face">
+									<video id="characVideo"   src="./videos/yakshasChief.mp4" controls></video>
+								</div>
+								<div class="card-bio">
 									<p>The Chief of the mystic and dead tribes - The Yakshas</p>
 								</div>
-							</div>
-							<div class="card-eigt charac-card">
-								<div class="charac-card-face">
-									<video id="characVideo" width="300px" src="./videos/ashok.mp4" controls></video>
+							</div>						
+							<div class="charac-card card-eigt swiper-slide">
+								<div class="card-face">
+									<video id="characVideo" src="./videos/ashok.mp4" controls></video>
 								</div>
-								<div id="eigt-bio" class="charac-card-bio wow slideInRight">
+								<div class="card-bio">
 									<h3>Ashok</h3>
 									<p>A warrior, a divine mortal or a corrupt hero ??</p>
-								</div>						
-							</div>
-						</div>
-						<div class="card-nine-ten">
-							<div class="card-nine charac-card">
-								<div class="charac-card-face">
-									<video id="characVideo" width="300px" src="./videos/shakradait.mp4" controls></video>
 								</div>
-								<div id="nine-bio" class="charac-card-bio wow fadeInLeft">
+							</div>
+							<div class="charac-card card-nine swiper-slide">
+								<div class="card-face">
+									<video id="characVideo" src="./videos/shakradait.mp4" controls></video>
+								</div>
+								<div class="card-bio">
 									<h3>Shakradait</h3>		
-									<p>The cunning and powerful second son of bhuswami</p>								</div>
-							</div>
-							<div class="card-ten charac-card">
-								<div class="charac-card-face">
-									<video id="characVideo" width="300px" src="./videos/navya-tejas.mp4" controls></video>
+									<p>The cunning and powerful second son of bhuswami</p>
 								</div>
-								<div id="ten-bio" class="charac-card-bio wow fadeInRight">
+							</div>
+							<div class="charac-card card-ten swiper-slide">
+								<div class="card-face">
+									<video id="characVideo" src="./videos/navya-tejas.mp4" controls></video>
+								</div>
+								<div class="card-bio">
 									<p>Navya-Tejas and their embrace of love</p>
-								</div>						
+								</div>
 							</div>
 						</div>
-					</div>	
+
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
 				</div>				
 			</div>
 		</div>		
@@ -255,7 +275,7 @@
 			<div class="title-details">
 				<div class="reviews-label">
 					<h1>Reviews</h1>
-					
+			
 				</div>
 				<div class="reviews-details">
 					<div class="review wow fadeInLeft">
@@ -344,49 +364,9 @@
 				</div>
 				<div class="media-details">
 					<div class="print-media">
-						<div class="news wow fadeInLeft bgWhite">
-							<a href="https://tennews.in/manish-sisodia-and-anup-jalota-attend-the-cover-launch-of-chronicels-of-mortal-vishnu-by-antar-atreya" target="_blank">
-								<img src="./images/tenNewsLogo.png" alt="Ten News Logo">	
-							</a>	
-						</div>
 						<div class="news wow fadeInUp bgRed">
 							<a href="https://www.outlookindia.com/newsscroll/2019s-most-anticipated-debut-novel--chronicles-of-the-mortal-vishnu-by-24yearold-antar-atreya/1504039" target="_blank">
 								<img src="./images/outlookLogo.png" alt="OutlookIndia Logo">
-							</a>
-						</div>
-						<div class="news wow fadeInRight bgWhite">
-							<a href="http://tezpurbuzz.com/lifestyle/meet-tezpurs-antar-atreya-the-best-selling-author-making-waves-across-the-nation/?fbclid=IwAR3VjT93M9sKh9dRwf_q2L_LTNAE9zgNA4zRxMo1M-NXgB0hy1hrwX450sg" target="_blank">
-								<img src="./images/tezpurBuzzLogo.png" alt="Tezpur Buzz Logo">
-							</a>					
-						</div>
-						<div class="news wow fadeInLeft bgWhite">
-							<a href="http://theindiasaga.com/review-corner/chronicles-of-the-mortal-vishnu-a-mythological-thrill-is-on-shelves-now" target="_blank">
-								<img src="./images/theIndiaSagaLogo.png" alt="The Indian Saga Logo">
-							</a>	
-						</div>
-						<div class="news wow fadeInUp bgWhite">
-							<a href="https://m.dailyhunt.in/news/india/english/the+india+saga-epaper-indsaga/chronicles+of+the+mortal+vishnu+a+mythological+thrill+is+on+shelves+now-newsid-115644077" target="_blank">
-								<img src="./images/dailyhuntLogo.png" alt="DailyHunt">
-							</a>	
-						</div>
-						<div class="news wow fadeInRight bgBlue">
-							<a href="https://www.businesstoday.in/pti-feed/2019s-most-anticipated-debut-novel----chronicles-of-the-mortal-vishnu-by-24-year-old-antar-atreya./story/331593.html" target="_blank">
-								<img src="./images/businessTodayLogo.png" alt="Business Today Logo">
-							</a>	
-						</div>
-						<div class="news wow fadeInLeft bgWhite">
-							<a href="http://thenewsstrike.com/chronicles-of-the-mortal-vishnu-a-mythological-thrill-is-on-shelves-now/" target="_blank">
-								<img src="./images/theNewsStrikeLogo.png" alt="The News Strike Logo">
-							</a>	
-						</div>
-						<div class="news wow fadeInUp bgWhite">
-							<a href="https://insidene.com/2019/07/04/meet-assams-antar-atreya-the-24-year-old-former-atheist-turned-mythological-fiction-novelist/" target="_blank">
-								<img src="./images/insideNELogo.png" alt="Inside NE Logo">
-							</a>
-						</div>
-						<div class="news wow fadeInRight bgWhite">
-							<a href="https://www.asianage.com/books/190619/a-detailed-chronicle.html" target="_blank">
-								<img src="./images/theAsianAgeLogo.png" alt="The Asian Age Logo">
 							</a>
 						</div>
 						<div class="news wow fadeInRight bgWhite">
@@ -394,19 +374,60 @@
 								<img src="./images/deccanChronicleLogo.png" alt="">
 							</a>
 						</div>
-						<div class="news wow fadeInUp bgRed">
-							<a href="https://theguwahatitimes.info/tag/author-antar-atreya/" target="_blank">
-								<img src="./images/theGuwahatiTimesLogo.png" alt="">
-							</a>
+						<div class="news wow fadeInUp bgWhite">
+							<a href="https://m.dailyhunt.in/news/india/english/the+india+saga-epaper-indsaga/chronicles+of+the+mortal+vishnu+a+mythological+thrill+is+on+shelves+now-newsid-115644077" target="_blank">
+								<img src="./images/dailyhuntLogo.png" alt="DailyHunt">
+							</a>	
 						</div>
 						<div class="news wow fadeInUp bgWhite">
 							<a href="https://www.newindianexpress.com/lifestyle/books/2019/aug/02/ancient-saga-gets-a-modern-twist-2012965.html" target="_blank">
 								<img src="./images/theIndianExpressLogo.png" alt="">
 							</a>
 						</div>
+						<div class="news wow fadeInLeft bgWhite">
+							<a href="https://tennews.in/manish-sisodia-and-anup-jalota-attend-the-cover-launch-of-chronicels-of-mortal-vishnu-by-antar-atreya" target="_blank">
+								<img src="./images/tenNewsLogo.png" alt="Ten News Logo">	
+							</a>	
+						</div>
+						<div class="news wow fadeInRight bgWhite">
+							<a href="http://tezpurbuzz.com/lifestyle/meet-tezpurs-antar-atreya-the-best-selling-author-making-waves-across-the-nation/?fbclid=IwAR3VjT93M9sKh9dRwf_q2L_LTNAE9zgNA4zRxMo1M-NXgB0hy1hrwX450sg" target="_blank">
+								<img src="./images/tezpurBuzzLogo.png" alt="Tezpur Buzz Logo">
+							</a>	
+							<button class="mediaReadMore tap-target">Check some More...</button>				
+						</div>
+						<div class="news mediaPara wow fadeInLeft bgWhite">
+							<a href="http://theindiasaga.com/review-corner/chronicles-of-the-mortal-vishnu-a-mythological-thrill-is-on-shelves-now" target="_blank">
+								<img src="./images/theIndiaSagaLogo.png" alt="The Indian Saga Logo">
+							</a>	
+						</div>
+						<div class="news mediaPara wow fadeInRight bgBlue">
+							<a href="https://www.businesstoday.in/pti-feed/2019s-most-anticipated-debut-novel----chronicles-of-the-mortal-vishnu-by-24-year-old-antar-atreya./story/331593.html" target="_blank">
+								<img src="./images/businessTodayLogo.png" alt="Business Today Logo">
+							</a>	
+						</div>
+						<div class="news mediaPara wow fadeInLeft bgWhite">
+							<a href="http://thenewsstrike.com/chronicles-of-the-mortal-vishnu-a-mythological-thrill-is-on-shelves-now/" target="_blank">
+								<img src="./images/theNewsStrikeLogo.png" alt="The News Strike Logo">
+							</a>	
+						</div>
+						<div class="news mediaPara wow fadeInUp bgWhite">
+							<a href="https://insidene.com/2019/07/04/meet-assams-antar-atreya-the-24-year-old-former-atheist-turned-mythological-fiction-novelist/" target="_blank">
+								<img src="./images/insideNELogo.png" alt="Inside NE Logo">
+							</a>
+						</div>
+						<div class="news mediaPara wow fadeInRight bgWhite">
+							<a href="https://www.asianage.com/books/190619/a-detailed-chronicle.html" target="_blank">
+								<img src="./images/theAsianAgeLogo.png" alt="The Asian Age Logo">
+							</a>
+						</div>
+						<div class="news mediaPara wow fadeInUp bgRed">
+							<a href="https://theguwahatitimes.info/tag/author-antar-atreya/" target="_blank">
+								<img src="./images/theGuwahatiTimesLogo.png" alt="">
+							</a>
+						</div>
 					</div>
 
-					<div class="electro-media">
+					<div class="electro-media mediaPara">
 						<div class="news wow fadeInLeft">
 							<div class="fb-video" data-href="https://www.facebook.com/pratidintime/videos/453265168805741/UzpfSTEwMDAwMjQ4Mjc3OTY2NjoyMzA5MTMxMTY1ODQ2Mjg3/" data-width="400" data-show-text="false">
 								<div class="fb-xfbml-parse-ignore">
@@ -453,7 +474,7 @@
 					<h4>Watch, listen or read Antar's interviews</h4>
 				</div>
 				<div class="interviews-details">
-					<div class="interviews">
+					<div class="interview-video-text">
 						<div class="interviewVideos">
 							<div class="interviewV interv-one wow flipInX">
 								<iframe width="450" height="315" src="https://www.youtube.com/embed/xE_SLkt8Cl4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -468,25 +489,27 @@
 							<div class="interviewV interv-three wow flipInX">
 								<iframe width="450" height="315" src="https://www.youtube.com/embed/pkzzy8mz3sE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								<p>Book Cover Launch, New Delhi World Book Fair, 2019</p>
-							</div>	
+							</div>
 						</div>
 
-						<div class="interviewTexts">
-							<div class="interviewT interv-three wow bounceInDown">
+						<button class="interviewReadMore tap-target">Read some more...</button>	
+
+						<div class="interviewTexts intervPara">
+							<div class="interviewT interv-four wow bounceInDown">
 								<a href="http://tezpurbuzz.com/lifestyle/in-conversation-with-tezpurs-antar-atreya-who-is-shinning-across-the-entire-nation/?fbclid=IwAR1B_FjACSzL0V_SN8JAkG9xnZmQ2t9kZ1KagwJqOUvs4YN1zEkVSf5y6EA">
 									<h2>In conversation with Tezpur's Antar who's shining across the nation.</h2>
 									<p>-- Tezpurbuzz.com</p>
 								</a>
 							</div>
 	
-							<div class="interviewT interv-four wow bounceInDown">
+							<div class="interviewT interv-five wow bounceInDown">
 								<a href="https://genesisofpassion.wordpress.com/2019/09/11/a-candid-conversation-with-author-antar-atreya/">
 									<h2>A Candid Conversation with Author Antar Atreya.</h2>
 									<p>-- Genesis of passion</p>
 								</a>
 							</div>
 	
-							<div class="interviewT interv-five wow bounceInDown">
+							<div class="interviewT interv-six wow bounceInDown">
 								<a href="https://nestofbooks.com/a-day-with-antar-atreya/">
 									<h2>A Day With Antar Atreya.</h2>
 									<p>-- Nestofbooks.com</p>
@@ -506,8 +529,26 @@
 					<h4>Share your feedback, queries, reviews or anything about the book with Antar </h4>
 				</div>
 				<div class="social-contactForm">
+					<div class="contactForm">
+						<form action="">       
+							<div>
+								<input type="text" class="input-field name-input" required pattern="[A-Za-z]+" required>   
+								<label for="name" class="form-label name-lab">Your Name</label>
+							</div>
+							<div>
+								<input type="email" class="input-field email-input" required>   
+								<label for="email" class="form-label email-lab">Your Email</label>
+							</div>
+							<div>
+								<textarea name="text" class="input-field msg-input" placeholder="Your Message" required></textarea>	
+								<!-- <label for="msg" class="form-label msg-lab">Your Message</label> -->
+							</div>
+
+							<button class="submit" value="submit">Submit</button>
+						</form>
+					</div>
 					<div class="instaPosts">
-						<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B73TId6g_P8/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:300px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B73TId6g_P8/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/B73TId6g_P8/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Antar Atreya (@authorantaratreya)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2020-01-28T12:53:55+00:00">Jan 28, 2020 at 4:53am PST</time></p></div></blockquote> <script async src="https://www.instagram.com/embed.js"></script>
+						<!-- <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B73TId6g_P8/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:300px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B73TId6g_P8/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/B73TId6g_P8/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Antar Atreya (@authorantaratreya)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2020-01-28T12:53:55+00:00">Jan 28, 2020 at 4:53am PST</time></p></div></blockquote> <script async src="https://www.instagram.com/embed.js"></script> -->
 					</div>
 					<div class="teaser-poem">
 						<!-- <div class="book-teaser">
@@ -519,17 +560,7 @@
 							<p>1.5 lakhs+ views on Youtube & Instagram</p>
 						</div> -->
 					</div>
-					<div class="contactForm">
-						<form action="">       
-							<input type="text" class="fname-input input-field"
-							placeholder="Name" />   
-							<input type="email" class="lname-input input-field"
-							placeholder="Email" />
-							<textarea name="text" class="msg-input input-field"
-							placeholder="Your Message"></textarea>
-							<button class="submit">Submit</button>
-						</form>
-					</div>
+
 				</div>
 			</div>
 		</div>
@@ -537,34 +568,51 @@
 			<div class="footer">
 				<div class="copyright-developer">
 					<div class="copyright">
-						<p>Copyright © 2020  Antar Atreya. All Rights Reserved.</p>
+						<p>Copyright © 2020  Antar Atreya.</p>
 					</div>
 					<div class="developer">
 						<p>Developed by:
 							<a href="https://www.linkedin.com/in/bhaskar-dutta-101/"
-							target = "_blank">Bhaskar Dutta</a></p>
+							target = "_blank" class="tap-target">Bhaskar Dutta</a>
+						</p>
 					</div>
 				</div>
 			</div>
-			<button class="btn-scroll-top" onclick="scrollToTop()">
+			<button class="btn-scroll-top tap-target" onclick="scrollToTop()">
 				<i class="fas fa-chevron-circle-up"></i>
 			</button>
 	</div>
 
-	<script>
-		function openNav() {
-			document.getElementById("myNav").style.width = "100%";
-		}
-		
-		function closeNav() {
-			document.getElementById("myNav").style.width = "0%";
-		}
-
-	</script>	
 	<script src="./js/jquery-3.1.0.min.js"></script>	
 	<script src="./js/1.3 jquery.waypoints.min.js.js"></script>
 	<script src="./js/7.1 wow.min.js.js"></script>
 	<script src="./js/script.js"></script>
+	<script src="./js/swiper.min.js"></script>
+	<script>
+		// init swiper
+		if(window.matchMedia("(min-width: 1200px)").matches){
+			var swiper = new Swiper('.swiper-container', {
+			slidesPerView: 4,
+			spaceBetween: 30,
+			centeredSlides : true, 
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+		});
+		}
+
+		if(window.matchMedia("(max-width: 600px)").matches){
+			var swiper = new Swiper('.swiper-container', {
+				effect: 'flip',
+				grabCursor: true,
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev', 
+				},
+			});
+		}
+	</script>
 	<script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
 	<script src="https://kit.fontawesome.com/5e819a5b07.js"></script>
 </body>
