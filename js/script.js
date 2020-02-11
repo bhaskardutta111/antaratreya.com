@@ -65,30 +65,6 @@ function scrollToTop() {
     });
 }
 
-//reviews on slides
-var revIndx = 1;
-reviewSlide(revIndx);
-
-function revSlide(n){
-    reviewSlide(revIndx = revIndx + n);
-}
-
-function reviewSlide(n) {
-    var review = document.getElementsByClassName('rev');
-
-    if(n > review.length){
-        revIndx = 1;
-    }
-    if (n < 1) {
-        revIndx = review.length;
-    }
-
-    for (var r = 0; r < review.length; r++) {
-        review[r].style.display = 'none';
-    }
-    review[revIndx-1].style.display = 'block';
-}
-
 
 //scripts in responsive case
 //read more function 
