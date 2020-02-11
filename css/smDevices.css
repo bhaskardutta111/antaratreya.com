@@ -490,18 +490,6 @@ body a{
   text-align: center;
   /* border: 2px solid #fff; */
 }
-.bgWhite:active{
-  background-color: #fff;
-  border-radius: 10px;
-}
-.bgRed:active{
-  background-color: red;
-  border-radius: 10px;
-}
-.bgBlue:active{
-  background-color: #00ABEE;
-  border-radius: 10px;
-}
 .news img{
   width: 250px;
   height: 150px;
@@ -527,7 +515,18 @@ body a{
 .mediaPara{
   display: none;
 }
-
+.bgWhite:active{
+  background-color: #fff;
+  border-radius: 10px;
+}
+.bgRed:active{
+  background-color: red;
+  border-radius: 10px;
+}
+.bgBlue:active{
+  background-color: #00ABEE;
+  border-radius: 10px;
+}
 /***************interviews***************/
 .interviews{
   width: 100%;  
@@ -682,7 +681,6 @@ form>div .email-input{
 form>div .msg-input{
   height: 150px;
   width: 80%;
-
 }
 form>div .form-label{
   /* border: 2px solid red; */
