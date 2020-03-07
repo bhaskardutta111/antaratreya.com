@@ -1,0 +1,190 @@
+@media only screen and (max-width: 600px) {
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol,
+  ul {
+    list-style: none;
+  }
+  blockquote,
+  q {
+    quotes: none;
+  }
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: "";
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  /*******************RESET ENDS********************/
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: philosopher, "sans-serif";
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  .swiper-container {
+    height: auto;
+    max-width: 100%;
+    position: relative;
+    border-radius: 10px;
+    border: 10px solid #000;
+  }
+  .swiper-wrapper > .swiper-slide {
+    height: auto;
+    max-width: 100%;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    border: 5px solid blue;
+  }
+  .swiper-slide > p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .chapterTitle > .chapterContent,
+  .header > .headerContent {
+    text-align: center;
+    width: 100%;
+    margin: 200px 0;
+    padding: 70px 50px;
+    position: relative;
+  }
+  .chapterContent > h1,
+  .headerContent > h1,
+  .chapterEnd > h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 5px;
+    padding: 10px;
+  }
+  .chapterContent > h4,
+  .headerContent > h4 {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 2;
+    margin: 5px;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+}
