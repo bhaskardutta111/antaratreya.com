@@ -1,6 +1,8 @@
 # antaratreya.com
 
-Website for Antar Atreya
+Website for Antar Atreya:-
+https://antaratreya.com
+
 Single page website designed and developed with HTML5, CSS3 and Javascript.
 Libraries used:- 
 https://daneden.github.io/animate.css/
