@@ -3,6 +3,8 @@
 Website for Antar Atreya:-
 https://antaratreya.com
 
+{temp location - https://bhaskardutta111.github.io/antaratreya.com/ }
+
 Single page website designed and developed with HTML5, CSS3 and Javascript.
 Libraries used:- 
 https://daneden.github.io/animate.css/
