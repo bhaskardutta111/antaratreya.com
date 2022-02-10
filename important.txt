@@ -1,0 +1,120 @@
+color palette----
+
+Martinique
+#39304D
+
+Puce
+#CB8B99
+
+Wild Blue Yonder
+#7E78B1
+
+Bali Hai
+#8D9EB8
+
+
+https://coolors.co/palette/302462-1e1f2d-546096-060a1d-----
+/* CSS HEX */
+--st-patricks-blue: #302462ff;
+--raisin-black: #1E1F2Dff;
+--liberty: #546096ff;
+--pansy-purple: #7C2547ff;
+
+/* CSS HSL */
+--st-patricks-blue: hsla(252, 46%, 26%, 1);
+--raisin-black: hsla(236, 20%, 15%, 1);
+--liberty: hsla(229, 28%, 46%, 1);
+--pansy-purple: hsla(337, 54%, 32%, 1);
+
+/* SCSS HEX */
+$st-patricks-blue: #302462ff;
+$raisin-black: #1E1F2Dff;
+$liberty: #546096ff;
+$pansy-purple: #7C2547ff;
+
+/* SCSS HSL */
+$st-patricks-blue: hsla(252, 46%, 26%, 1);
+$raisin-black: hsla(236, 20%, 15%, 1);
+$liberty: hsla(229, 28%, 46%, 1);
+$pansy-purple: hsla(337, 54%, 32%, 1);
+
+/* SCSS RGB */
+$st-patricks-blue: rgba(48, 36, 98, 1);
+$raisin-black: rgba(30, 31, 45, 1);
+$liberty: rgba(84, 96, 150, 1);
+$pansy-purple: rgba(124, 37, 71, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #302462ff, #1E1F2Dff, #546096ff, #7C2547ff);
+$gradient-right: linear-gradient(90deg, #302462ff, #1E1F2Dff, #546096ff, #7C2547ff);
+$gradient-bottom: linear-gradient(180deg, #302462ff, #1E1F2Dff, #546096ff, #7C2547ff);
+$gradient-left: linear-gradient(270deg, #302462ff, #1E1F2Dff, #546096ff, #7C2547ff);
+$gradient-top-right: linear-gradient(45deg, #302462ff, #1E1F2Dff, #546096ff, #7C2547ff);
+$gradient-bottom-right: linear-gradient(135deg, #302462ff, #1E1F2Dff, #546096ff, #7C2547ff);
+$gradient-top-left: linear-gradient(225deg, #302462ff, #1E1F2Dff, #546096ff, #7C2547ff);
+$gradient-bottom-left: linear-gradient(315deg, #302462ff, #1E1F2Dff, #546096ff, #7C2547ff);
+$gradient-radial: radial-gradient(#302462ff, #1E1F2Dff, #546096ff, #7C2547ff);
+
+
+
+/*code from figma design
+
+/* Antar Atreya Author, Public Speaker, Mentor */
+
+
+position: relative;
+width: 593px;
+height: 206px;
+
+
+height: 206px;
+width: 593px;
+left: 38px;
+top: 24px;
+border-radius: 0px;
+
+/* Rectangle 2 */
+
+
+position: absolute;
+width: 221px;
+height: 82px;
+
+height: 82px;
+width: 221px;
+left: 85px;
+top: 374px;
+border-radius: 18px;
+
+/* Rectangle 3 */
+
+
+position: absolute;
+width: 221px;
+height: 82px;
+
+background: #7E78B1;
+border: 4px solid #000000;
+box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 18px;
+
+height: 82px;
+width: 221px;
+left: 387px;
+top: 374px;
+border-radius: 18px;
+
+
+* Mask Group */
+
+
+position: absolute;
+width: 389px;
+height: 647px;
+
+height: 647px;
+width: 389px;
+left: 678px;
+top: -99px;
+border-radius: 0px;
+
