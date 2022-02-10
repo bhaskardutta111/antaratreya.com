@@ -892,4 +892,9 @@ mark,audio,video {
     line-height: 2;
     padding: 10px;
   }
+
+/*newdesign*/
+
+.main-container{
+  background-image: linear-gradient(to left, #39304d, #5c4463, #815a77, #a67289, #cb8b99);
 }

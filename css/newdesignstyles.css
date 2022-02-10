@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+
+}
+
+body{
+/*  background-image: linear-gradient(to left, #39304d, #5c4463, #815a77, #a67289, #cb8b99);*/
+  background-color: #39304D;
+}
+
+
+.header{
+position: relative;
+width: 593px;
+height: 206px;
+  background-color: #CB8B99;
+
+
+height: 206px;
+width: 593px;
+left: 38px;
+top: 24px;
+border-radius: 0px;
+
+
+}
